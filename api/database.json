@@ -33,37 +33,66 @@
                 "name": "Crazy Karen's",
                 "address": "123 Main Street",
                 "city": "Anna",
-                "state": "Ohio"
+                "state": "Ohio",
+                "distrubtorId": 2
             },
             {
                 "id": 2,
                 "name": "Howdy Harry's",
                 "address": "345 South Street",
                 "city": "Timbuck",
-                "state": "Tennessee"
+                "state": "Tennessee",
+                "distrubtorId": 3
             },
             {
                 "id": 3,
                 "name": "Jolly Jim's",
                 "address": "485 North Street",
                 "city": "Las Vegas",
-                "state": "Nevada"
+                "state": "Nevada",
+                "distrubtorId": 1
             },
             {
                 "id": 4,
                 "name": "Smiling Suzie's",
                 "address": "567 West Street",
                 "city": "New York City",
-                "state": "New York"
+                "state": "New York",
+                "distrubtorId": 3
             },
             {
                 "id": 5,
                 "name": "Looney Larry's",
                 "address": "789 East Street",
                 "city": "Tampa",
-                "state": "Florida"
+                "state": "Florida",
+                "distrubtorId": 2
             }
 
+    ],
+
+        "distributors": [
+            {
+                "id": 1,
+                "name": "Gooly's",
+                "address": "05969 Main Street",
+                "city": "Gary",
+                "state": "Georgia"
+            },
+            {
+                "id": 2,
+                "name": "Mendel's",
+                "address": "869404 South Street",
+                "city": "Marysville",
+                "state": "Iowa"
+            },
+            {
+                "id": 3,
+                "name": "Neve",
+                "address": "06904 North Street",
+                "city": "Kari",
+                "state": "North Dakota"
+            }
         ]
     
 }
