@@ -1,5 +1,6 @@
-import {getRetailers, useRetailers} from "./RetailersDataProvider.js"
-import{retailersHTML} from "./RetailersHTML.js"
+import { getRetailers, useRetailers } from "./RetailersDataProvider.js"
+import { retailersHTML } from "./RetailersHTML.js"
+import { getDistributors, useDistributors } from "../distributors/DistributorsDataProvider.js"
 
 const contentTarget = document.querySelector(".retailersContainer")
 
@@ -12,10 +13,17 @@ export const retailersList = () => {
 }
 
 const render = (retailerArray) => {
-    const allRetailersIntoHTML = retailerArray.map(
-        retailer => {
-            return retailersHTML(retailer)
-        }
-    ).join("")
-contentTarget.innerHTML = allRetailersIntoHTML
+    getDistributors()
+        .then(() => {
+            const distributors = useDistributors()
+
+            const allRetailersIntoHTML = retailerArray.map(
+                retailer => {
+                    const foundDistributor = distributors.find(distributor => distributor.id === retailer.distrubtorId)
+                    return retailersHTML(retailer, foundDistributor)
+                }
+            ).join("")
+            contentTarget.innerHTML = allRetailersIntoHTML
+        })
+
 }
