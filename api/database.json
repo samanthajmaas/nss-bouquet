@@ -25,5 +25,45 @@
             "type": "Lavender",
             "color": "purple"
         }
-    ]
+    ],
+    
+        "retailers": [
+            {
+                "id": 1,
+                "name": "Crazy Karen's",
+                "address": "123 Main Street",
+                "city": "Anna",
+                "state": "Ohio"
+            },
+            {
+                "id": 2,
+                "name": "Howdy Harry's",
+                "address": "345 South Street",
+                "city": "Timbuck",
+                "state": "Tennessee"
+            },
+            {
+                "id": 3,
+                "name": "Jolly Jim's",
+                "address": "485 North Street",
+                "city": "Las Vegas",
+                "state": "Nevada"
+            },
+            {
+                "id": 4,
+                "name": "Smiling Suzie's",
+                "address": "567 West Street",
+                "city": "New York City",
+                "state": "New York"
+            },
+            {
+                "id": 5,
+                "name": "Looney Larry's",
+                "address": "789 East Street",
+                "city": "Tampa",
+                "state": "Florida"
+            }
+
+        ]
+    
 }
